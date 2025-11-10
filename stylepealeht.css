@@ -1,7 +1,7 @@
 html {
     background-color: #0f0404 ;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .banner {
@@ -29,7 +29,11 @@ html {
     font-weight: bold;
     /*-webkit-text-stroke: 0.00000001vw #c24c0d; */
 }
+.allhayley h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
 
+}
 .allhayley p {
     display: flex ;
     align-items:baseline ;
