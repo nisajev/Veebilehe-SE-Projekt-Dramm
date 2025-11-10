@@ -1,0 +1,44 @@
+html {
+    background-color: #0f0404 ;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100vw ;
+    height: 40vw ;
+    background-image: url(https://www.nme.com/wp-content/uploads/2023/02/NME-PARAMORE-HERO-2023@2560x1625.jpg);
+    background-size: cover;
+    background-position: 0% 25%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner-tiitel {
+    position: absolute ;
+    left: 50% ;
+    transform: translateX(-50%) ;
+    bottom : 0px ;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner-tiitel h1 {
+    color: #b62c05;
+    font-family: "Righteous", sans-serif;
+    font-size: 6vw;
+    font-weight: bold;
+    /*-webkit-text-stroke: 0.00000001vw #c24c0d; */
+}
+
+.allhayley p {
+    display: flex ;
+    align-items:baseline ;
+    gap : 10px ;
+}
+.allhayley img {
+    width: 60vw ;
+    height: 30vw ;
+    object-fit: cover ;
+    object-position: 20% 0%;
+    display : flex ;
+}
