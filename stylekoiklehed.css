@@ -1,0 +1,69 @@
+html, body{
+    background-color: #120e0c ;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Siit algab linkide banneri vormistus */
+.riba {
+    width: 100% ;
+    height: 60px;
+    border: 20px;
+    background-color: #1a1514;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.riba a {
+    margin-top: 13px;
+    margin-left: 14px;
+    margin-right: 14px;
+    text-decoration: none;
+    color: #E85D04;
+    display: flex;
+    flex-grow: 1;  
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    font-style: bold;
+    background: linear-gradient(to right, #ffe016, #FAA307, #F48C06, #E85D04 , #DC2F02, #D00000) ;
+    background-size: 200% 200% ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: nupud 2.5s linear infinite; 
+    transition: 0.5s;
+
+}
+
+.riba-pealeht:hover a{
+    color :rgba(0, 0, 0, 0);
+    transform: scale(1.2);
+}
+
+.riba-ajalugu:hover a{
+    color :rgba(0, 0, 0, 0);
+    transform: scale(1.2);
+}
+
+.riba-albumid:hover a{
+    color :rgba(0, 0, 0, 0);
+    transform: scale(1.2);
+}
+
+@keyframes nupud {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.riba-pealeht {text-align: left; margin-left: 60px;}
+.riba-ajalugu {text-align: center;}
+.riba-albumid {text-align: right;margin-right: 60px;}
