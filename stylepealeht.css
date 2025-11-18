@@ -145,3 +145,17 @@
 .hayley img {
     object-position: 90% 20%;
 }
+
+.albumi-nimi h1 {
+  font-family: "Righteous", sans-serif;
+  color: aliceblue;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.albumi-nimi h2 {
+  font-family: "Righteous", sans-serif;
+  color: aliceblue;
+  font-size: 30px; /* or whatever size you prefer */
+  margin-top: 20px;
+}
