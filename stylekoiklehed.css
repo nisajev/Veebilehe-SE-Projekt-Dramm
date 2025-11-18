@@ -23,21 +23,20 @@ html, body{
     justify-content: space-between;
 }
 .riba a {
-    margin-top: 13px;
+    margin-top: 8px;
     margin-left: 14px;
     margin-right: 14px;
     text-decoration: none;
-    color: #E85D04;
+    color: aliceblue;
     display: flex;
     flex-grow: 1;  
-    font-family: "Righteous", sans-serif;
-    font-weight: 500;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 550;
+    letter-spacing: 1.6px;
     font-size: 26px;
-    font-style: bold;
     background: linear-gradient(to right, #ffe016, #FAA307, #F48C06, #E85D04 , #DC2F02, #D00000) ;
     background-size: 200% 200% ;
     background-clip: text;
-    -webkit-background-clip: text;
     animation: nupud 2.5s linear infinite; 
     transition: 0.5s;
 
@@ -46,16 +45,19 @@ html, body{
 .riba-pealeht:hover a{
     color :rgba(0, 0, 0, 0);
     transform: scale(1.2);
+        letter-spacing: 1.8px;
 }
 
 .riba-ajalugu:hover a{
     color :rgba(0, 0, 0, 0);
     transform: scale(1.2);
+    letter-spacing: 1.8px;
 }
 
 .riba-albumid:hover a{
     color :rgba(0, 0, 0, 0);
     transform: scale(1.2);
+    letter-spacing: 1.8px;
 }
 
 @keyframes nupud {
