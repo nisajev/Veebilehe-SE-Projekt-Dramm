@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="stylealbumid.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <title>Pealeht</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <title>Albumid</title> 
     <title>Albumid</title>
 </head>
 
@@ -37,38 +37,53 @@
 
         <div class="albumi-grid">
 
-            <div class="album">
+            <div class="album" data-page="all_we_know_is_falling.html">
                 <h2>All We Know Is Falling</h2>
                 <img src="https://upload.wikimedia.org/wikipedia/ru/a/a9/All_We_Know_Is_Falling.jpg">
             </div>
 
-            <div class="album">
+            <div class="album" data-page="">
                 <h2>Riot!</h2>
                 <img src="https://m.media-amazon.com/images/I/61zNO4a00yL._UF1000,1000_QL80_.jpg">
             </div>
 
-            <div class="album">
+            <div class="album" data-page="">
                 <h2>Brand New Eyes</h2>
                 <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Paramore_-_Brand_New_Eyes.png">
             </div>
 
-            <div class="album">
+            <div class="album" data-page="">
                 <h2>Paramore</h2>
                 <img src="https://i.scdn.co/image/ab67616d0000b273532033d0d90736f661c13d35">
             </div>
 
-            <div class="album">
+            <div class="album" data-page="">
                 <h2>After Laughter</h2>
                 <img src="https://upload.wikimedia.org/wikipedia/ru/6/65/Paramore_afterlaughter.jpg">
             </div>
 
-            <div class="album">
+            <div class="album" data-page="">
                 <h2>This Is Why</h2>
                 <img src="https://media.pitchfork.com/photos/63345315ec0383884068298d/master/pass/Paramore.jpg">
             </div>
 
         </div>
     </div>
-    
+
+<script>
+    const albums = document.querySelectorAll(".album");
+
+    albums.forEach(album => {
+        album.addEventListener("click", function() {
+            const page = album.dataset.page;
+            if (page) {
+                window.location.href = page;
+            } else {
+                alert("See albumi leht ei ole veel tehtud!");
+            }
+        });
+    });
+</script>
+
 </body>
 </html>

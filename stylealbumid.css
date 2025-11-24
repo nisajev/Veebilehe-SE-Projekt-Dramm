@@ -98,3 +98,7 @@ body {
 .album img:hover {
     transform: scale(1.05);
 }
+
+#all-we-know-is-falling {
+    cursor: pointer;
+}
