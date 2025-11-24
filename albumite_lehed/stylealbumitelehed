@@ -80,7 +80,6 @@ html, body {
 
 .riba a {
     text-decoration: none;
-    color: aliceblue;
     font-family: "Saira Condensed", sans-serif;
     font-weight: 550;
     letter-spacing: 1.6px;
@@ -106,21 +105,30 @@ html, body {
     100% {background-position: 0% 50%;}
 }
 
+.riba-pealeht {text-align: left; margin-left: 60px;}
+.riba-ajalugu {text-align: center;}
+.riba-albumid {text-align: right; margin-right: 60px;}
+
 /* -------------------------------
    Album Page Content
 -------------------------------- */
 .album-page {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* Center everything horizontally */
     padding: 50px 20px;
+    text-align: center;
+    color: aliceblue;
+    font-family: "Saira Condensed", sans-serif;
 }
 
 .album-page img {
-    width: 300px;
-    height: 300px;
+    width: 450px;                /* Bigger album cover */
+    height: 450px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px #00000080;
-    margin-bottom: 20px;
+    box-shadow: 0 0 15px #00000080;
+    margin-bottom: 25px;
     transition: transform 0.3s;
     cursor: pointer;
 }
@@ -129,22 +137,26 @@ html, body {
     transform: scale(1.05);
 }
 
+.album-page h2 {
+    font-family: "Righteous", sans-serif;
+    font-size: 36px;
+    margin: 10px 0;
+    color: aliceblue;
+}
+
 .release-date {
+    font-family: "Saira Condensed", sans-serif;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    color: #f0f0f0;
 }
 
 .album-story {
     width: 80%;
     max-width: 900px;
-    margin: 0 auto;
     font-size: 18px;
     line-height: 1.6;
     text-align: left;
-}
-
-/* Album page headings */
-.album-page h1, .album-page h2, .album-page h3 {
-    font-family: "Righteous", sans-serif;
     color: aliceblue;
+    margin-bottom: 50px;
 }
