@@ -99,6 +99,6 @@ body {
     transform: scale(1.05);
 }
 
-#all-we-know-is-falling {
+.album {
     cursor: pointer;
 }
