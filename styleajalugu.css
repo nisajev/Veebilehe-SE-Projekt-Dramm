@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+.banner-container {
+    width: 100%;
+    height: 40vw;
+    position: relative;
+}
+.banner { 
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(to top, rgba(130, 120, 116, 1) 0.5%, rgba(130, 120, 116, 0.5) 25%, rgba(130, 120, 116,0) 100%), 
+        url(https://www.nme.com/wp-content/uploads/2023/02/NME-PARAMORE-HERO-2023@2560x1625.jpg);
+    background-size: cover;
+    background-position: 0% 25%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-blend-mode: multiply;
+}
+
+.banner-tiitel {
+    position: absolute ;
+    left: 50% ;
+    transform: translateX(-50%) ;
+    bottom : -10px ;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner-tiitel h1 {
+    color: #a62400;
+    font-family: "Righteous", sans-serif;
+    font-size: 69px;
+    letter-spacing: 20px;
+    transform: scaleX(1.08);
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #201d19; 
+    -webkit-text-stroke: 0.00000001vw #d15000;
+    transition: 2.6s;
+}
+
+.banner-tiitel:hover h1 {
+    transform: scale(1.08) scaleX(1.08);
+    letter-spacing: 24px;
+}
+
+/* TIMELINE CONTAINER */
+.timeline {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px 0; 
+    position: relative;
+}
+
+/* Vertikaalne joon */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #374151;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* EVENT BLOCKS */
+.event {
+    position: relative;
+    padding: 32px 0; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 32px; 
+    z-index: 20;
+}
+
+/* General block style */
+.event-text,
+.event-image {
+    width: 42%;
+    padding: 16px; 
+    border-radius: 8px; 
+    background-color: #262626;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #d1d5db;
+}
+
+/* Pilt */
+.event-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px; 
+    object-fit: cover;
+}
+
+/* Pealkirjad */
+.event h2 {
+    color: #d15000;
+    font-size: 24px; 
+    font-weight: 700;
+    margin-bottom: 8px; 
+}
+
+/* Punkt joonel */
+.event::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #d15000;
+    border-radius: 50%;
+    border: 3px solid #120e0c;
+    z-index: 30;
+    left: 50%;
+    top: 32px; 
+    transform: translate(-50%, -50%);
+}
+
+/* PLOKKIDE VAHELDUMINE */
+/* Paaritu: tekst vasakul, pilt paremal */
+.timeline article:nth-of-type(odd) .event-text {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.timeline article:nth-of-type(odd) .event-image {
+    margin-left: auto;
+}
+
+/* Paaris: tekst paremal, pilt vasakul */
+.timeline article:nth-of-type(even) .event-text {
+    margin-left: auto;
+}
+
+.timeline article:nth-of-type(even) .event-image {
+    margin-right: auto;
+}
+
+/* Viimane plokk: keskel */
+.event:last-child {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.event:last-child .event-text {
+    width: 80%;
+    text-align: center;
+    background-color: #363636;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.event:last-child::before {
+    top: 16px; 
+    left: 50%;
+}
