@@ -147,3 +147,26 @@ html, body {
     color: aliceblue;
     margin-bottom: 50px;
 }
+
+.spotify-button {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+.spotify-button:hover {
+    transform: scale(1.15);
+}
+
+.spotify-logo {
+    width: 65%; 
+    height: auto;
+}
+
