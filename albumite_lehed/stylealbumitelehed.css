@@ -1,6 +1,3 @@
-/* -------------------------------
-   Global Styles
--------------------------------- */
 html, body {
     background-color: #201d19;
     margin: 0;
@@ -11,14 +8,10 @@ html, body {
     color: aliceblue;
 }
 
-/* Box sizing for all elements */
 * {
     box-sizing: border-box;
 }
 
-/* -------------------------------
-   Banner
--------------------------------- */
 .banner-container {
     width: 100%;
     height: 40vw;
@@ -64,9 +57,6 @@ html, body {
     letter-spacing: 24px;
 }
 
-/* -------------------------------
-   Navigation Bar
--------------------------------- */
 .riba {
     width: 100%;
     height: 60px;
@@ -109,13 +99,10 @@ html, body {
 .riba-ajalugu {text-align: center;}
 .riba-albumid {text-align: right; margin-right: 60px;}
 
-/* -------------------------------
-   Album Page Content
--------------------------------- */
 .album-page {
     display: flex;
     flex-direction: column;
-    align-items: center;          /* Center everything horizontally */
+    align-items: center;         
     padding: 50px 20px;
     text-align: center;
     color: aliceblue;
@@ -123,7 +110,7 @@ html, body {
 }
 
 .album-page img {
-    width: 450px;                /* Bigger album cover */
+    width: 450px;           
     height: 450px;
     object-fit: cover;
     border-radius: 8px;
@@ -156,7 +143,7 @@ html, body {
     max-width: 900px;
     font-size: 18px;
     line-height: 1.6;
-    text-align: left;
+    text-align: center;
     color: aliceblue;
     margin-bottom: 50px;
 }
