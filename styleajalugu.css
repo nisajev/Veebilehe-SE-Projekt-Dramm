@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+body, main, section, article, p, h2, h3, h4, h5, h6, a, li {
+    font-family: 'Saira Condensed', sans-serif;
+    color: #d1d5db; 
+    line-height: 1.6;
+}
+
 .banner-container {
     width: 100%;
     height: 40vw;
@@ -47,7 +53,6 @@
 }
 
 
-
 /* TIMELINE CONTAINER */
 .timeline {
     max-width: 1000px;
@@ -91,6 +96,10 @@
     color: #d1d5db;
 }
 
+.event-text p {
+    font-size: 18px;
+}
+
 /* Pilt */
 .event-image img {
     width: 100%;
@@ -101,6 +110,7 @@
 
 /* Pealkirjad */
 .event h2 {
+    font-family: 'Righteous', sans-serif;
     color: #d15000;
     font-size: 24px; 
     font-weight: 700;
