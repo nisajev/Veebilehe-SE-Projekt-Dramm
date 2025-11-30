@@ -102,3 +102,17 @@ body {
 .album {
     cursor: pointer;
 }
+
+@media (max-width: 900px) {
+    .albumi-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+/* Mobile / small screens */
+@media (max-width: 500px) {
+    .albumi-grid {
+        grid-template-columns: 1fr; /* 1 column */
+        gap: 20px;
+    }
+}
