@@ -1,5 +1,5 @@
 html, body {
-    background-color: #201d19;
+    background-color: #292423;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -28,14 +28,14 @@ html, body {
     background-position: 0% 25%;
     background-repeat: no-repeat;
     position: relative;
-    background-blend-mode: normal;
+    background-blend-mode: multiply;
 }
 
 .banner-tiitel {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 20px;
+    bottom: -10px;
     text-align: center;
     padding: 0 20px;
 }
@@ -58,36 +58,54 @@ html, body {
 }
 
 .riba {
-    width: 100%;
+    width: 100% ;
     height: 60px;
+    border: 20px;
     background-color: #1a1514;
+    position: relative;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 60px;
 }
 
 .riba a {
+    margin-top: 8px;
+    margin-left: 14px;
+    margin-right: 14px;
     text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    flex-grow: 1;  
     font-family: "Saira Condensed", sans-serif;
     font-weight: 550;
     letter-spacing: 1.6px;
     font-size: 26px;
-    background: linear-gradient(to right, #ffe016, #FAA307, #F48C06, #E85D04 , #DC2F02, #D00000);
-    background-size: 200% 200%;
+    background: linear-gradient(to right, #ffe016, #FAA307, #F48C06, #E85D04 , #DC2F02, #D00000) ;
+    background-size: 200% 200% ;
     background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: nupud 2.5s linear infinite;
+    animation: nupud 2.5s linear infinite; 
     transition: 0.5s;
 }
 
-.riba a:hover {
+.riba-pealeht:hover a{
+    color :rgba(0, 0, 0, 0);
+    transform: scale(1.2);
+        letter-spacing: 1.8px;
+}
+
+.riba-ajalugu:hover a{
+    color :rgba(0, 0, 0, 0);
     transform: scale(1.2);
     letter-spacing: 1.8px;
-    color: rgba(255,255,255,0.8);
 }
+
+.riba-albumid:hover a{
+    color :rgba(0, 0, 0, 0);
+    transform: scale(1.2);
+    letter-spacing: 1.8px;
+}
+
 
 @keyframes nupud {
     0% {background-position: 0% 50%;}
@@ -97,7 +115,8 @@ html, body {
 
 .riba-pealeht {text-align: left; margin-left: 60px;}
 .riba-ajalugu {text-align: center;}
-.riba-albumid {text-align: right; margin-right: 60px;}
+.riba-albumid {text-align: right;margin-right: 60px;}
+
 
 .album-page {
     display: flex;
