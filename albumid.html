@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="stylealbumid.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <title>Albumid</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <title>Paramore : Albumid</title>
 </head>
 
@@ -39,61 +39,38 @@
 
             <div class="album" data-page="albumite_lehed/all_we_know_is_falling.html">
                 <h2>All We Know Is Falling</h2>
-                <img src="https://i.scdn.co/image/ab67616d0000b2736c909db54eb00df38772ae79">
+                <img src="https://i.scdn.co/image/ab67616d0000b2736c909db54eb00df38772ae79" alt="All We Know is Falling">
             </div>
 
             <div class="album" data-page="albumite_lehed/riot.html">
                 <h2>Riot!</h2>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fchorus.fm%2Fwp-content%2Fuploads%2F2015%2F12%2F980x980-AC0B87F3-964B-462A-A1E90B60337AF426-848x848.jpg&f=1&nofb=1&ipt=104c4409dc5e8673ea5988b568ffa882ab53c2d320ae46e3caa7e6fdc43f074e">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fchorus.fm%2Fwp-content%2Fuploads%2F2015%2F12%2F980x980-AC0B87F3-964B-462A-A1E90B60337AF426-848x848.jpg&f=1&nofb=1&ipt=104c4409dc5e8673ea5988b568ffa882ab53c2d320ae46e3caa7e6fdc43f074e" alt="Riot!">
             </div>
 
             <div class="album" data-page="albumite_lehed/brand_new_eyes.html">
                 <h2>Brand New Eyes</h2>
-                <img src="https://m.media-amazon.com/images/I/91N5ovoYjoL._UF1000,1000_QL80_.jpg">
+                <img src="https://m.media-amazon.com/images/I/91N5ovoYjoL._UF1000,1000_QL80_.jpg" alt="Brand New Eyes">
             </div>
 
             <div class="album" data-page="albumite_lehed/paramore.html">
                 <h2>Paramore</h2>
-                <img src="https://i.scdn.co/image/ab67616d0000b273532033d0d90736f661c13d35">
+                <img src="https://i.scdn.co/image/ab67616d0000b273532033d0d90736f661c13d35" alt="Paramore">
             </div>
 
             <div class="album" data-page="albumite_lehed/after_laughter.html">
                 <h2>After Laughter</h2>
-                <img src="https://upload.wikimedia.org/wikipedia/ru/6/65/Paramore_afterlaughter.jpg">
+                <img src="https://upload.wikimedia.org/wikipedia/ru/6/65/Paramore_afterlaughter.jpg" alt="After Laughter">
             </div>
 
             <div class="album" data-page="albumite_lehed/this_is_why.html">
                 <h2>This Is Why</h2>
-                <img src="https://media.pitchfork.com/photos/63345315ec0383884068298d/master/pass/Paramore.jpg">
+                <img src="https://media.pitchfork.com/photos/63345315ec0383884068298d/master/pass/Paramore.jpg" alt="This is Why">
             </div>
 
         </div>
     </div>
 
-<script>
-    // Valime kõik albumi elemendid, millel on klass "album"
-    const albums = document.querySelectorAll(".album");
-
-    // Käime iga albumi läbi ja lisame klikku kuulates
-    albums.forEach(album => {
-
-        // Kui kasutaja klikib albumil, käivitatakse see funktsioon
-        album.addEventListener("click", function() {
-
-             // Võtame HTML elemendilt data-page atribuudi (selles on lingileht)
-            const page = album.dataset.page;
-
-            // Kui albumil on lisatud aadress, liigume sellele lehele
-            if (page) {
-                window.location.href = page;
-
-            // Kui linki ei ole, teavitame kasutajat
-            } else {
-                alert("Selle albumi leht ei ole veel tehtud!");
-            }
-        });
-    });
-</script>
+<script src="albumid.js"></script>
 
 </body>
 </html>
