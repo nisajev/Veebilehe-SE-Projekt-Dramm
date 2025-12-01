@@ -105,14 +105,14 @@ body {
 
 @media (max-width: 900px) {
     .albumi-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Mobile / small screens */
+/* väikestele ekraanidele */
 @media (max-width: 500px) {
     .albumi-grid {
-        grid-template-columns: 1fr; /* 1 column */
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 }
