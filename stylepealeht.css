@@ -1,3 +1,27 @@
+/*üldisem osa */
+.üld {
+    color: aliceblue;
+    align-self: center;
+    text-align: center;
+}
+.üld h1 {
+    font-family:"Saira Condensed", sans-serif ;
+    font-weight: 380;
+    font-size: 24px;
+    padding-top: 32px;
+    margin-right: 18%;
+    margin-left: 18%;
+    padding-bottom: 32px;
+}
+
+.üld h2 {
+    font-family: "Righteous", sans-serif;
+    color: aliceblue;
+    font-size: 40px;
+    margin-top: 20px;
+    letter-spacing: 22px;
+}
+
 /*Liikmete üldised vormistused */
 .all-liikme-container {
     height: 40vw;
@@ -57,7 +81,7 @@
     display: flex;
 }
 
-/*parem vormistus */
+/* Paremal pool paiknevate elementide vormistus */
 .all-parem h2 {
     text-align: right;
     margin-right: 52px ;
@@ -75,8 +99,7 @@
     display: block;
 }
 
-/*vasak vormistus */
-
+/* Vasakul pool paiknevate elementide vormistus */
 .all-vasak h2 {
     text-align: left;
     margin-left: 52px ;
@@ -93,6 +116,7 @@
     display: block;
 }
 
+/* Spetsiifiline vormistus Hayley pildile */
 .hayley img {
     object-position: 90% 20%;
 }

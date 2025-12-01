@@ -1,7 +1,7 @@
 main, section, article, p, h2, h3, h4, h5, h6, a, li {
     font-family: 'Saira Condensed', sans-serif;
     color: aliceblue; 
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 /*Siit al
@@ -127,6 +127,6 @@ main, section, article, p, h2, h3, h4, h5, h6, a, li {
 }
 
 .event:last-child::before {
-    top: 16px; 
+    top: 4px; 
     left: 50%;
 }

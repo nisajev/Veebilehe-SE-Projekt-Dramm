@@ -1,3 +1,4 @@
+// Autoriks Ruslan Nišajev
 // Ootab kuni veebileht on täielikult laaditud
 window.addEventListener('load', function() {
 
