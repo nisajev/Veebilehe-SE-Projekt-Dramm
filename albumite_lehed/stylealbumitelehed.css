@@ -12,6 +12,50 @@ html, body {
     box-sizing: border-box;
 }
 
+.banner-container {
+    width: 100%;
+    height: 40vw;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(to top, rgba(130, 120, 116, 1) 0.5%, rgba(130, 120, 116, 0.5) 25%, rgba(130, 120, 116,0) 100%), 
+        url(https://www.nme.com/wp-content/uploads/2023/02/NME-PARAMORE-HERO-2023@2560x1625.jpg);
+    background-size: cover;
+    background-position: 0% 25%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-blend-mode: normal;
+}
+
+.banner-tiitel {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner-tiitel h1 {
+    color: #a62400;
+    font-family: "Righteous", sans-serif;
+    font-size: 69px;
+    letter-spacing: 20px;
+    transform: scaleX(1.08);
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #201d19; 
+    -webkit-text-stroke: 0.00000001vw #d15000;
+    transition: 2.6s;
+}
+
+.banner-tiitel:hover h1 {
+    transform: scale(1.08) scaleX(1.08);
+    letter-spacing: 24px;
+}
 
 .riba {
     width: 100%;
@@ -97,7 +141,8 @@ html, body {
 .album-story {
     width: 80%;
     max-width: 900px;
-    font-size: 18px;
+    font-size: 19px;
+    font-weight: 390;
     line-height: 1.6;
     text-align: center;
     color: aliceblue;

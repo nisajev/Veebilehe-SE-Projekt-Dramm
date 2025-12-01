@@ -70,7 +70,9 @@
 
 .all-parem img {
     float: right;
-    padding-left: 40px;
+    margin-left: 40px;
+    border-radius: 10px 0 0 10px;
+    display: block;
 }
 
 /*vasak vormistus */
@@ -86,7 +88,9 @@
 }
 .all-vasak img{
     float: left;
-    padding-right: 40px;
+    margin-right: 40px;
+    border-radius: 0px 10px 10px 0px;
+    display: block;
 }
 
 .hayley img {
